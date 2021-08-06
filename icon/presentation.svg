@@ -1,0 +1,24 @@
+<svg width="256" height="256" xmlns="http://www.w3.org/2000/svg" stroke="#333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <rect x="0" y="0" width="256" height="256" style="fill:#FEF3C7;stroke-width: 0;"></rect>
+    <!-- Slide border -->
+    <rect x="30" y="60" width="200" height="120" style="fill:white;"></rect>
+    <!-- Foots -->
+    <line x1="80" y1="180" x2="60" y2="220"></line>
+    <line x1="180" y1="180" x2="200" y2="220"></line>
+    <line x1="130" y1="50" x2="130" y2="60"></line>
+    <!-- Slide content -->
+    <!-- Title -->
+    <line style="stroke: #0284C7;" x1="42" y1="80" x2="160" y2="80"></line>
+    <!-- Bullet points -->
+    <line style="stroke: #0284C7;" x1="42" y1="100" x2="42" y2="100"></line>
+    <line style="stroke: #0284C7;" x1="42" y1="115" x2="42" y2="115"></line>
+    <line style="stroke: #0284C7;" x1="42" y1="130" x2="42" y2="130"></line>
+    <!-- Lines -->
+    <line x1="52" y1="100" x2="130" y2="100"></line>
+    <line x1="52" y1="115" x2="110" y2="115"></line>
+    <line x1="52" y1="130" x2="110" y2="130"></line>
+    <!-- Pie chart -->
+    <circle cx="172" cy="126" r="15" stroke="#22C55E" stroke-dasharray="70.68 23.56" stroke-dashoffset="0" stroke-width="30" stroke-linecap="butt"></circle>
+
+    <circle cx="172" cy="126" r="15" stroke="#0284C7" stroke-dasharray="23.56 70.68" stroke-dashoffset="23.56" stroke-width="30" stroke-linecap="butt"></circle>
+</svg>

@@ -1,0 +1,62 @@
+{
+	"name": "beamer",
+	"displayName": "Beamer",
+	"description": "Beamer snippets for Visual Studio Code",
+	"version": "0.1.0",
+	"publisher": "barankilic",
+	"icon": "icon/presentation.png",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.58.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"keywords": [
+		"latex",
+		"beamer",
+		"presentation"
+	],
+	"activationEvents": [
+		"onLanguage:latex"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"snippets": [
+			{
+				"language": "latex",
+				"path": "./snippets/beamer.json"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.58.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.2.2",
+		"@types/node": "14.x",
+		"eslint": "^7.27.0",
+		"@typescript-eslint/eslint-plugin": "^4.26.0",
+		"@typescript-eslint/parser": "^4.26.0",
+		"glob": "^7.1.7",
+		"mocha": "^8.4.0",
+		"typescript": "^4.3.2",
+		"vscode-test": "^1.5.2"
+	},
+	"bugs": {
+		"url": "https://github.com/kilicbaran/beamer-vscode-extension/issues",
+		"email": "baran.kilic@boun.edu.tr"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kilicbaran/beamer-vscode-extension.git"
+	},
+	"homepage": "https://github.com/kilicbaran/beamer-vscode-extension/blob/main/README.md"
+}

@@ -1,0 +1,149 @@
+{
+    "Presentation with detailed title page": {
+        "prefix": "beamerdetailed",
+        "body": [
+            "\\documentclass[]{beamer}",
+            "",
+            "\\usepackage[T1]{fontenc}",
+            "\\usepackage[utf8]{inputenc}",
+            "",
+            "\\title{${1:Title}}",
+            "\\subtitle{${2:Subitle}}",
+            "\\author{${3:Author}}",
+            "\\institute{${4:Institution}}",
+            "\\date{{${5:\\today}}",
+            "",
+            "\\begin{document}",
+            "",
+            "\\begin{frame}",
+            "\t\\titlepage",
+            "\\end{frame}",
+            "",
+            "$0",
+            "",
+            "\\end{document}"
+        ]
+    },
+    "Presentation": {
+        "prefix": "beamer",
+        "body": [
+            "\\documentclass[]{beamer}",
+            "",
+            "\\usepackage[T1]{fontenc}",
+            "\\usepackage[utf8]{inputenc}",
+            "",
+            "\\title{${1:Title}}",
+            "",
+            "\\begin{document}",
+            "",
+            "\\begin{frame}",
+            "\t\\titlepage",
+            "\\end{frame}",
+            "",
+            "$0",
+            "",
+            "\\end{document}"
+        ]
+    },
+    "Frame": {
+        "prefix": "frame",
+        "body": [
+            "\\begin{frame}{${1:Frame Title}}",
+            "\t$0",
+            "\\end{frame}"
+        ]
+    },
+    "Frame with subtitle": {
+        "prefix": "framesub",
+        "body": [
+            "\\begin{frame}{${1:Frame Title}}{${2:Frame Subtitle}}",
+            "\t$0",
+            "\\end{frame}"
+        ]
+    },
+    "Fullscreen frame": {
+        "prefix": "framefull",
+        "body": [
+            "\\begin{frame}[plain]",
+            "\t$0",
+            "\\end{frame}"
+        ]
+    },
+    "Table of contents": {
+        "prefix": "tableofcontents",
+        "body": [
+            "\\begin{frame}{${1:Outline}}",
+            "\t\\tableofcontents",
+            "\\end{frame}",
+            "",
+            "$0"
+        ]
+    },
+    "Two columns": {
+        "prefix": "columnstwo",
+        "body": [
+            "\\begin{columns}",
+            "\t\\begin{column}{0.5\\textwidth}",
+            "\t\tCol 1$0",
+            "\t\\end{column}",
+            "\t\\begin{column}{0.5\\textwidth}",
+            "\t\tCol 2",
+            "\t\\end{column}",
+            "\\end{columns}"
+        ]
+    },
+    "Three columns": {
+        "prefix": "columnsthree",
+        "body": [
+            "\\begin{columns}",
+            "\t\\begin{column}{0.33\\textwidth}",
+            "\t\tCol 1$0",
+            "\t\\end{column}",
+            "\t\\begin{column}{0.33\\textwidth}",
+            "\t\tCol 2",
+            "\t\\end{column}",
+            "\t\\begin{column}{0.33\\textwidth}",
+            "\t\tCol 3",
+            "\t\\end{column}",
+            "\\end{columns}"
+        ]
+    },
+    "Block": {
+        "prefix": "block",
+        "body": [
+            "\\begin{block}{${1:Block title}}",
+            "\t$0",
+            "\\end{block}"
+        ]
+    },
+    "Alert Block": {
+        "prefix": "alertblock",
+        "body": [
+            "\\begin{alertblock}{${1:Block title}}",
+            "\t$0",
+            "\\end{alertblock}"
+        ]
+    },
+    "Definition block": {
+        "prefix": "definition",
+        "body": [
+            "\\begin{definition}",
+            "\t$0",
+            "\\end{definition}"
+        ]
+    },
+    "Example block": {
+        "prefix": "example",
+        "body": [
+            "\\begin{example}",
+            "\t$0",
+            "\\end{example}"
+        ]
+    },
+    "Set theme": {
+        "prefix": "settheme",
+        "body": [
+            "\\usetheme{${1|AnnArbor,Antibes,Bergen,Berkeley,Berlin,Boadilla,CambridgeUS,Copenhagen,Darmstadt,Dresden,EastLansing,Frankfurt,Goettingen,Hannover,Ilmenau,JuanLesPins,Luebeck,Madrid,Malmoe,Marburg,Montpellier,PaloAlto,Pittsburgh,Rochester,Singapore,Szeged,Warsaw|}}"
+        ]
+    }
+}
